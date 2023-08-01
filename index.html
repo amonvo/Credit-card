@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character encoding and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Credit Card Ui Design</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Container for the credit card UI -->
+    <div class="container">
+        <!-- Header section with the logo and card chip -->
+        <header>
+            <!-- Logo with an image and the card brand name -->
+            <span class="logo">
+                <img src="images/logo.png" alt="">
+                <h5>Master Card</h5>
+            </span>
+            <!-- Image of the card chip -->
+            <img src="images/chip.png" alt="" class="chip">
+        </header>
+        <!-- Card details section -->
+        <div class="card-details">
+            <!-- Container for card number and cardholder name -->
+            <div class="name-number">
+                <!-- Label for the card number -->
+                <h6>Card Number</h6>
+                <!-- Display the card number -->
+                <h5 class="number">8050 50 40 2030 3020</h5>
+                <!-- Display the cardholder name -->
+                <h5 class="name">AmonV</h5>
+            </div>
+            <!-- Container for the card's expiration date -->
+            <div class="valid-date">
+                <!-- Label for the expiration date -->
+                <h6>Valid Thru</h6>
+                <!-- Display the expiration date -->
+                <h5>05/28</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Color picker section -->
+    <div class="color-picker">
+        <!-- Heading for the color picker -->
+        <h6>Select Card Color</h6>
+        <!-- Container for color options -->
+        <div class="colors">
+            <!-- Individual color options with their background color -->
+            <div class="color" style="background-color: #f44336;"></div>
+            <div class="color" style="background-color: #2196F3;"></div>
+            <div class="color" style="background-color: #4CAF50;"></div>
+            <div class="color" style="background-color: #FF9800;"></div>
+            <div class="color" style="background-color: #dae332;"></div>
+            <div class="color" style="background-color: #0bdcdc;"></div>
+            <div class="color" style="background-color: #9C27B0;"></div>
+        </div>
+        <!-- Button to reset the color selection -->
+        <button class="reset-btn">Reset</button>
+        <br>
+        <br>
+        <!-- Input field for the user to type their name -->
+        <div class="name-input">
+            <input type="text" id="name" placeholder="Type your name">
+            <!-- Button to update the cardholder name -->
+            <button onclick="updateName()">Enter</button>
+        </div>
+    </div>
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

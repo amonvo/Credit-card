@@ -1,0 +1,144 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e3f2fd;
+}
+
+/* Container styles */
+.container {
+    position: relative;
+    background-image: url("images/bg.png");
+    background-size: cover;
+    padding: 25px;
+    border-radius: 28px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and logo styles */
+header,
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo image styles */
+.logo img {
+    width: 48px;
+    margin-right: 10px;
+}
+
+/* Heading styles */
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+/* Chip image styles */
+header .chip {
+    width: 60px;
+}
+
+/* Subheading styles */
+h6 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Card number styles */
+h5.number {
+    margin-top: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* Cardholder name styles */
+h5.name {
+    margin-top: 20px;
+}
+
+/* Card details container styles */
+.container .card-details {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Color picker section styles */
+.color-picker {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+/* Color options container styles */
+.color-picker .colors {
+    margin-top: 10px;
+}
+
+/* Heading for the color picker styles */
+.color-picker h6 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Color options container styles */
+.color-picker .colors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Individual color option styles */
+.color-picker .color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 20px; 
+}
+
+/* Card details transition on background-color change */
+.card-details {
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Default color options */
+.color-picker .color:nth-child(1) {
+    background-color: #f44336;
+}
+
+.color-picker .color:nth-child(2) {
+    background-color: #2196F3;
+}
+
+.color-picker .color:nth-child(3) {
+    background-color: #4CAF50;
+}
+
+.color-picker .color:nth-child(4) {
+    background-color: #FF9800;
+}
+
+.color-picker .color:nth-child(5) {
+    background-color: #9C27B0;
+}
